@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    
+                <div class="row g-3">
+    
+                    <div *ngFor="let i of students" class="col col-12 col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card" >
+                            <img width="200px" height ="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgfvxLGsH6AeLaVFLfcj4hG4Ml5qdy7OUNA&usqp=CAU" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.name}}</h5>
+                              <p class="card-text" >Roll Number Id : {{i.rollNO}}</p>
+                              <p class="card-text" >Admission Number : {{i.admissionNo}}</p>
+                              <p class="card-text" >College : {{i.college}}</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
